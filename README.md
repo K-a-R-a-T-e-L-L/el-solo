@@ -2,7 +2,7 @@
 
 # Многоязычный сайт-визитка и платформа для привлечения потенциальных клиентов 👥
 
-![alt text](../elSolo/public/images/screenshot_desktop_en.png)
+![alt text](public/images/screenshot_desktop_en.png)
 
 ## ✨ Информация
 - Главный экран приветсвия
@@ -31,11 +31,11 @@
    npm install
 
 3. Запуск 
-- через Docker:
+- Docker:
    ```bash
    docker build -t el-solo .
    docker run -p 3000:3000 el-solo
-- через локально:
+- Локально:
    ```bash
    npm run build
    npm start

@@ -11,6 +11,8 @@ RUN \
     else echo "Lockfile not found." && exit 1; \
     fi
 
+RUN npm rebuild lightningcss --update-binary
+
 # Сборка
 FROM base AS builder
 WORKDIR /app

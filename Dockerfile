@@ -1,33 +1,37 @@
-FROM node:20-slim AS base
-
-# Установка зависимостей
-FROM base AS deps
+# STAGE 1: Build
+FROM node:22-alpine AS builder
+RUN npm config set registry https://registry.npmmirror.com
 WORKDIR /app
-COPY package.json yarn.lock* package-lock.json* pnpm-lock.yaml* ./
-RUN \
-    if [ -f yarn.lock ]; then yarn --frozen-lockfile; \
-    elif [ -f package-lock.json ]; then npm install; \
-    elif [ -f pnpm-lock.yaml ]; then yarn global add pnpm && pnpm i --frozen-lockfile; \
-    else echo "Lockfile not found." && exit 1; \
-    fi
 
-# Сборка
-FROM base AS builder
-WORKDIR /app
-COPY --from=deps /app/node_modules ./node_modules
+# Копируем зависимости первыми — для кэширования слоёв
+COPY package*.json ./
+RUN npm ci --no-audit --progress=false
+
+# Копируем исходники
 COPY . .
+
+# Собираем приложение
 RUN npm run build
 
-# Запуск
-FROM base AS runner
+# STAGE 2: Production
+FROM node:22-alpine AS runner
+
 WORKDIR /app
-ENV NODE_ENV=production
+
+# Создаём непривилегированного пользователя
 RUN addgroup --system --gid 1001 nodejs
 RUN adduser --system --uid 1001 nextjs
-USER nextjs
-COPY --from=builder /app/public ./public
+
+# Копируем только необходимое из standalone-выхода
 COPY --from=builder --chown=nextjs:nodejs /app/.next/standalone ./
 COPY --from=builder --chown=nextjs:nodejs /app/.next/static ./.next/static
+COPY --from=builder --chown=nextjs:nodejs /app/public ./public
+
+# Переключаемся на безопасного пользователя
+USER nextjs
+
+# Порт по умолчанию для Next.js
 EXPOSE 3000
-ENV PORT=3000
+
+# Запуск сервера
 CMD ["node", "server.js"]

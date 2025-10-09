@@ -1,9 +1,12 @@
 version: '3.8'
+
 services:
-  nextjs:
-    build: .
-    restart: unless-stopped
+  nextjs-app:
+    build:
+      context: .
+      dockerfile: Dockerfile
     ports:
-      - "127.0.0.1:3000:3000"
+      - "3000:3000"
     environment:
       - NODE_ENV=production
+    restart: unless-stopped

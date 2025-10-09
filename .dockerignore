@@ -1,7 +1,13 @@
 node_modules
 .next
+out
+build
+dist
 .git
-Dockerfile
-.dockerignore
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
 README.md
-npm-debug.log
+Dockerfile
+docker-compose.yml

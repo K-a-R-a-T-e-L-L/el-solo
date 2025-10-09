@@ -1,0 +1,62 @@
+@keyframes rotate_menuu {
+    0% {
+        rotate: 0;
+    }
+
+    100% {
+        rotate: 90deg;
+    }
+}
+
+@keyframes rorotate_menuu {
+    0% {
+        rotate: 0;
+    }
+
+    100% {
+        rotate: -180deg;
+    }
+}
+
+.rotate_menu {
+    animation: rotate_menuu 0.5s ease-in-out;
+}
+
+.rorotate_menu {
+    animation: rorotate_menuu 0.5s ease-in-out;
+}
+
+@keyframes appereance_burger {
+    0%{
+        height: 0;
+        opacity: 0;
+    }
+    100%{
+        height: 100vh;
+        opacity: 1;
+    }
+}
+
+.appereance_burger{
+    animation: appereance_burger 0.4s ease-in-out;
+    animation-fill-mode: forwards;
+    display: block;
+}
+
+@keyframes hidden_burger {
+    0%{
+        height: 100vh;
+        opacity: 1;
+        display: block;
+    }
+    100%{
+        height: 0;
+        opacity: 0;
+        display: none;
+    }
+}
+
+.hidden_burger{
+    animation: hidden_burger 0.4s ease-in-out;
+    animation-fill-mode: forwards;
+}

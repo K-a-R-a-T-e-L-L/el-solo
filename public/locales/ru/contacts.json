@@ -1,0 +1,43 @@
+{
+    "contacts": {
+        "title": "Свяжитесь со мной",
+        "listContacts": [
+            {
+                "name": "Телеграм",
+                "url": "https://t.me/K_a_R_a_T_e_L_L",
+                "src": "tg",
+                "alt": "Иконка телеграма"
+            },
+            {
+                "name": "GitHub",
+                "url": "https://github.com/K-a-R-a-T-e-L-L",
+                "src": "gh",
+                "alt": "Иконка GitHub"
+            },
+            {
+                "name": "ВКонтакте",
+                "url": "https://vk.com/k_a_r_a_t_e_l_l",
+                "src": "vk",
+                "alt": "Иконка ВКонтакте"
+            },
+            {
+                "name": "Email",
+                "url": "mailto:kirillcuhorukov6@gmail.com",
+                "src": "email",
+                "alt": "Иконка электронной почты"
+            },
+            {
+                "name": "Whatsapp",
+                "url": "https://wa.me/89617160943",
+                "src": "whatsapp",
+                "alt": "Иконка ватсаппа"
+            },
+            {
+                "name": "Телефон",
+                "url": "tel:8-961-716-09-43",
+                "src": "tel",
+                "alt": "Иконка телефона"
+            }
+        ]
+    }
+}

@@ -1,0 +1,39 @@
+{
+    "name": "El Solo",
+    "short_name": "El Solo",
+    "description": "A full cycle of web development and digital services.",
+    "start_url": "/en",
+    "id": "/en",
+    "display": "standalone",
+    "orientation": "any",
+    "scope": "/",
+    "theme_color": "#000000",
+    "background_color": "#ffffff",
+    "icons": [
+        {
+            "src": "/favicon-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "/favicon-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ],
+    "screenshots": [
+        {
+            "src": "/images/screenshot_desktop_en.png",
+            "type": "image/png",
+            "sizes": "1280x720",
+            "form_factor": "wide"
+        },
+        {
+            "src": "/images/screenshot_mobile_en.png",
+            "type": "image/png",
+            "sizes": "360x640",
+            "form_factor": "narrow"
+        }
+    ],
+    "lang": "en-US"
+}

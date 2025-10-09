@@ -1,0 +1,168 @@
+@keyframes shaking {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(10px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+.shaking {
+    animation: shaking 3s infinite ease-in-out;
+}
+
+@keyframes glitch {
+
+    0%,
+    10%,
+    12%,
+    14%,
+    16%,
+    18%,
+    20%,
+    22%,
+    24%,
+    40%,
+    42%,
+    44%,
+    100% {
+        text-shadow: 0 0 1px #00FFD1, 0 0 11px #00FFD1;
+        transform: translateX(-2px);
+    }
+
+    59%,
+    61%,
+    63%,
+    65%,
+    67%,
+    69%,
+    71% {
+        color: #00FFD1;
+    }
+
+    60%,
+    62%,
+    64%,
+    66%,
+    68%,
+    70% {
+        color: #FF0066;
+    }
+
+    11%,
+    13%,
+    15%,
+    17%,
+    19%,
+    21%,
+    41%,
+    43% {
+        text-shadow: none;
+        transform: translateX(0px);
+    }
+}
+
+.glitch {
+    color: #00FFD1;
+    animation: glitch 2.5s infinite;
+}
+
+.hoverP {
+    border-left: 0px solid #00FFD1;
+    padding-left: 0px;
+    transition: border-left 0.1s ease-in-out, padding-left 0.1s ease-in-out;
+
+    &:hover {
+        border-left: 3px solid #00FFD1;
+        padding-left: 3px;
+        cursor: pointer;
+        background: linear-gradient(to right, #00ffd00e, transparent);
+    }
+}
+
+.bgCardAdvatage {
+    background-image: url(/images/spades_icon_bg.png);
+    background-size: 73px 81px;
+    background-repeat: no-repeat;
+    background-position: right top;
+}
+
+@keyframes shift {
+    0% {
+        filter: drop-shadow(0 0 0px red)
+    }
+
+    50% {
+        filter: drop-shadow(0 0 10px red)
+    }
+
+    100% {
+        filter: drop-shadow(0 0 0px red)
+    }
+}
+
+.shift {
+    animation: shift 2s infinite ease-in-out;
+}
+
+.transfusion_bg {
+    background: linear-gradient(to left top, rgba(0, 255, 255, 0.05), rgba(0, 255, 136, 0.05), rgba(255, 0, 255, 0.05));
+}
+
+
+.gradient_border {
+    padding: 2px;
+    background: linear-gradient(45deg, #2d2d2d, #00FFD1, #2d2d2d, #FF0066);
+    background-size: 400% 400%;
+    animation: gradientBorder 3s ease infinite;
+    z-index: 0;
+    cursor: pointer;
+    transition: scale 0.1s ease-in-out;
+
+    &:hover {
+        scale: 1.01;
+    }
+}
+
+@keyframes gradientBorder {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@keyframes decor_gradient_line {
+    0%{
+        left: -100%;
+    }
+    50%{
+        left: 0;
+    }
+    100%{
+        left: 100%;
+    }
+}
+
+.decor_gradient_line{
+    width: 100%;
+    height: 3px;
+    background-color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 3px;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), #FF0066, #00FF88, #00FFD1, rgba(255, 255, 255, 0));
+    animation: decor_gradient_line 5s ease-in-out infinite;
+}

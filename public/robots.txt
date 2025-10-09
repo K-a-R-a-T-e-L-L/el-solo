@@ -1,0 +1,8 @@
+User-Agent: *
+
+Allow: /
+
+Disallow: /_next/
+Disallow: /static/
+
+Sitemap: https://el-solo.space/sitemap.xml

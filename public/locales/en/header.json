@@ -1,0 +1,12 @@
+{
+    "header": {
+        "alt": "El Solo logo",
+        "listLinks": [
+            ["Home", "home"],
+            ["Advantages", "advantages"],
+            ["Services", "services"],
+            ["Portfolio", "portfolio"],
+            ["Contacts", "contacts"]
+        ]
+    }
+}

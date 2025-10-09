@@ -1,0 +1,43 @@
+@keyframes breath {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.breath {
+    animation: breath 4s infinite;
+}
+
+@keyframes card {
+    0%{
+        scale: 0.7;
+    }
+    100%{
+        scale: 1;
+    }
+}
+
+@keyframes cardBreath {
+    0%{
+        opacity: 0.5;
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0.5;
+    }
+}
+
+.card{
+    animation: card 0.5s ease-in-out, cardBreath 3s ease-in-out infinite;
+    animation-fill-mode: backwards;
+}

@@ -1,0 +1,57 @@
+{
+    "advantages": {
+        "title": "Why El Solo?",
+        "titleSecond": {
+            "first": "Because there’s no 'we' — just me.",
+            "last": "And I deliver results."
+        },
+        "comparisonsList": {
+            "title": "Companies / Freelancers",
+            "items": [
+                {
+                    "other": "Handoffs between team members",
+                    "elSolo": "Single developer, full control"
+                },
+                {
+                    "other": "Template-based projects",
+                    "elSolo": "100 % individual approach"
+                },
+                {
+                    "other": "Support ends immediately after completion",
+                    "elSolo": "Ongoing technical partnership"
+                },
+                {
+                    "other": "Hidden costs are everywhere",
+                    "elSolo": "All-inclusive prices"
+                }
+            ]
+        },
+        "advantagesList": [
+            {
+                "title": "A unified work front. Full control.",
+                "description": "I’m not a team — I handle everything end-to-end. No transfers of responsibilities, no delays, no communication gaps. From the database and user interface to the advertising settings, everything is in my hands. A single vision, a single realization."
+            },
+            {
+                "title": "A business solution. Not just code.",
+                "description": "I'm not creating a website — I'm creating a working platform to attract traffic, increase sales, and generally be the face of your company. Hosting, domain, SSL, conversion-optimized design, performance tuning, and more — all included."
+            },
+            {
+                "title": "Not a template implementation.",
+                "description": "No templates. Just your style. Unique design with custom animations matching the company's corporate identity. A solution that will definitely set you apart from the competition."
+            },
+            {
+                "title": "Support without borders. Guarantee of stability.",
+                "description": "My work does not end after the launch — I provide 24/7 technical support, prompt troubleshooting, consultations, recommendations. Your website will work smoothly, and I will become your reliable business partner in the online world."
+            },
+            {
+                "title": "Full transparency of each stage.",
+                "description": "Fixed project cost from day one — as long as no new, unapproved features are added. Clear development stages with your active input. A predictable budget, zero surprise fees. Clear development stages with your priority participation in decision-making. A predictable budget without unexpected surcharges."
+            }
+        ],
+        "alts": [
+            "The icon of the red arrow to the right",
+            "An image of a handshake. A symbol of trust",
+            "The green arrow icon to the right"
+        ]
+    }
+}

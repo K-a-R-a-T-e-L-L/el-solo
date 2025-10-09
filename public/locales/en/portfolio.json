@@ -1,0 +1,47 @@
+{
+    "portfolio": {
+        "title": "Examples of My Work",
+        "projects": [
+            {
+                "title": "Videohranitel — Official Website for a Video Surveillance Installation Company",
+                "description": "A corporate website for a company offering integrated solutions in security and comfort: video surveillance system installation, air conditioner setup, and electrical wiring services.",
+                "technologies": [
+                    "Next.js",
+                    "TypeScript",
+                    "SCSS",
+                    "Y.Metrica",
+                    "CSS"
+                ],
+                "button": {
+                    "title": "View the project →",
+                    "url": "https://vidsave.ru"
+                },
+                "icon": {
+                    "url": "project_1",
+                    "alt": "Surveillance camera icon facing left"
+                }
+            },
+            {
+                "title": "El Solo — Personal Website of a Freelance Developer",
+                "description": "A multilingual portfolio and client acquisition platform embodying the 'one developer, full cycle' philosophy. The site showcases end-to-end web development, technical support, and digital marketing services — emphasizing personalized attention, transparency, and long-term partnership.",
+                "technologies": [
+                    "Next.js",
+                    "TypeScript",
+                    "i18n (ru/en)",
+                    "SCSS",
+                    "Tailwind CSS",
+                    "CSS",
+                    "Docker"
+                ],
+                "button": {
+                    "title": "View the project →",
+                    "url": "/"
+                },
+                "icon": {
+                    "url": "project_2",
+                    "alt": "El Solo logo"
+                }
+            }
+        ]
+    }
+}

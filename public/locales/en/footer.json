@@ -1,0 +1,76 @@
+{
+    "footer": {
+        "firstBox": {
+            "alt": "El Solo logo",
+            "title": "El Solo",
+            "description": "A full-stack developer with a focus on results. Your idea is an opportunity. I am a tool for its implementation."
+        },
+        "secondBox": {
+            "title": "Navigation",
+            "listLinks": [
+                [
+                    "Home",
+                    "home"
+                ],
+                [
+                    "Advantages",
+                    "advantages"
+                ],
+                [
+                    "Services",
+                    "services"
+                ],
+                [
+                    "Portfolio",
+                    "portfolio"
+                ],
+                [
+                    "Contacts",
+                    "contacts"
+                ]
+            ]
+        },
+        "thirdBox": {
+            "title": "Contacts",
+            "listLinks": [
+                [
+                    "@K_a_R_a_T_e_L_L",
+                    "https://t.me/K_a_R_a_T_e_L_L",
+                    "tg",
+                    "Telegram icon"
+                ],
+                [
+                    "github.com/K-a-R-a-T-e-L-L",
+                    "https://github.com/K-a-R-a-T-e-L-L",
+                    "gh",
+                    "The GitHub icon"
+                ],
+                [
+                    "vk.com/k_a_r_a_t_e_l_l",
+                    "https://vk.com/k_a_r_a_t_e_l_l",
+                    "vk",
+                    "VKontakte icon"
+                ],
+                [
+                    "kirillcuhorukov6@gmail.com",
+                    "mailto:kirillcuhorukov6@gmail.com",
+                    "email",
+                    "Email icon"
+                ],
+                [
+                    "+7-961-716-09-43",
+                    "https://wa.me/89617160943",
+                    "whatsapp",
+                    "Whatsapp icon"
+                ],
+                [
+                    "8-961-716-09-43",
+                    "tel:8-961-716-09-43",
+                    "tel",
+                    "Phone icon"
+                ]
+            ]
+        },
+        "copyright": "© 2025 El Solo. All rights reserved."
+    }
+}

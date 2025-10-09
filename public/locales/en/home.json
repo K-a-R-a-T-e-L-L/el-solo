@@ -1,0 +1,37 @@
+{
+    "home": {
+        "title": {
+            "first": "From idea to traffic —",
+            "second": "on",
+            "third": "e",
+            "fourth": "d",
+            "fifth": "eve",
+            "sixth": "l",
+            "seventh": "op",
+            "eighth": "e",
+            "ninth": "r,",
+            "last": "one goal: your success."
+        },
+        "titleSecond": "Full-cycle delivery: design, code, server, SEO, and traffic generation.",
+        "description": "one developer. Full stack. Real business results.",
+        "cards": {
+            "first": {
+                "text": "SEO optimization",
+                "alt": "The icon of the card suit of spades"
+            },
+            "second": {
+                "text": "Individual approach",
+                "alt": "The hearts card suit icon"
+            },
+            "last": {
+                "text": "Support and reliability",
+                "alt": "The icon of the card suit of the club"
+            }
+        },
+        "alts": [
+            "Image of the night city",
+            "Image of cracked glass",
+            "Image of cracks on the sides of the card"
+        ]
+    }
+}

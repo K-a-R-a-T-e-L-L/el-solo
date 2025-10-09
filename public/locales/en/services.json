@@ -1,0 +1,134 @@
+{
+    "services": {
+        "title": "Cooperation",
+        "clickText": "Click ↖",
+        "listServices": [
+            {
+                "title": "Turnkey web development",
+                "list": [
+                    "Business card sites",
+                    "Landing pages",
+                    "Online stores",
+                    "Corporate websites",
+                    "Web applications"
+                ],
+                "images": {
+                    "icon": {
+                        "url": "webdev_icon",
+                        "alt": "Icon for the turnkey web development service"
+                    },
+                    "image": {
+                        "url": "webdev",
+                        "alt": "Web Development Image"
+                    }
+                },
+                "description": "Turnkey web development — is a full cycle of creating a web solution: from task analysis and interface design to development, testing, security settings, hosting and preparation for attracting traffic. Your time is spent on business, not on managing contractors."
+            },
+            {
+                "title": "Technical support and maintenance",
+                "list": [
+                    "Revision of projects, elimination of errors",
+                    "Optimization across all spectrums",
+                    "Configuring the server infrastructure",
+                    "Migrations and updates",
+                    "Security implementation",
+                    "Technical support and consultations"
+                ],
+                "images": {
+                    "icon": {
+                        "url": "maintenance_icon",
+                        "alt": "Website Technical support and maintenance icon"
+                    },
+                    "image": {
+                        "url": "maintenance",
+                        "alt": "Website Technical support and Maintenance image"
+                    }
+                },
+                "description": "Technical support and maintenance — is the regular maintenance of web projects: stability monitoring, troubleshooting, dependency updates, and trouble—free operation. In a word, everything so that you can focus on your business, and not on incidents."
+            },
+            {
+                "title": "Digital Marketing & Growth",
+                "list": [
+                    "Integration with third-party services",
+                    "SEO optimization",
+                    "Configuring Analytics",
+                    "Working with advertising companies",
+                    "Scaling"
+                ],
+                "images": {
+                    "icon": {
+                        "url": "promotion_icon",
+                        "alt": "Website marketing and promotion icon"
+                    },
+                    "image": {
+                        "url": "promotion",
+                        "alt": "Image marketing and Promotion"
+                    }
+                },
+                "description": "Marketing and promotion — is a comprehensive development of the visibility and attractiveness of a project in a digital environment. Technical and content preparation of the website for correct indexing and ranking in search engines, implementation of accounting systems, advertising settings and much more."
+            }
+        ],
+        "pricesList": [
+            {
+                "price": "The average cost starts from 800₽/hour",
+                "title": "Technical partnership",
+                "descriptionFirst": "The cost is calculated based on the time spent — you only pay for real work, without hidden fees.",
+                "descriptionSecond": "You will receive prompt error correction, optimization, infrastructure configuration, security, consultations and similar work — all within the hourly rate.",
+                "ps": "You can take a fixed number of hours, or after voicing the problem, I will give my estimate of the time.",
+                "button": "To approve"
+            },
+            {
+                "price": "The average cost starts from 10 000₽",
+                "title": "Web development",
+                "descriptionFirst": "Fixed price is determined after the approval of the project brief. You know the budget and deadlines in advance — without hidden fees.",
+                "descriptionSecond": "You get not just a website, but a technical partner for the entire life of the project: support, optimization, integration, advertising, analytics — all within the tariff (surcharges only for global changes after completion).",
+                "ps": "The clearer your technical specification, the faster and more profitable the start. Don't know what you want? I'll help you formulate your goals together.",
+                "button": "To approve"
+            },
+            {
+                "price": "10% of your ad spend, or from 2 000₽/service",
+                "title": "Attracting traffic",
+                "descriptionFirst": "The cost is 10% of the advertising budget or a fixed price starting from 2 000 RUB for a separate service. You can see in advance what you are paying for — without hidden surcharges.",
+                "descriptionSecond": "You get not just a performer, but a marketing partner: setting up analytics, SEO, integration, launching and scaling advertising — all for your business (additional payments only for non-standard tasks agreed separately).",
+                "ps": "The clearer your goals are, the more accurate the result. Not sure where to start? I'll help you create a strategy — without unnecessary expenses.",
+                "button": "To approve"
+            }
+        ],
+        "popUpWindow": {
+            "title": "To move forward or dive deeper into the details, please contact me in a way that is convenient for you.",
+            "alt": "Hands connecting puzzle pieces — symbol of partnership",
+            "listSocialNetwork": [
+                {
+                    "url": "https://t.me/K_a_R_a_T_e_L_L",
+                    "name": "tg",
+                    "alt": "Telegram icon"
+                },
+                {
+                    "url": "https://github.com/K-a-R-a-T-e-L-L",
+                    "name": "gh",
+                    "alt": "Github icon"
+                },
+                {
+                    "url": "https://vk.com/k_a_r_a_t_e_l_l",
+                    "name": "vk",
+                    "alt": "Vkontakte icon"
+                },
+                {
+                    "url": "mailto:kirillcuhorukov6@gmail.com",
+                    "name": "email",
+                    "alt": "Email icon"
+                },
+                {
+                    "url": "https://wa.me/89617160943",
+                    "name": "whatsapp",
+                    "alt": "Whatsapp icon"
+                },
+                {
+                    "url": "tel:8-961-716-09-43",
+                    "name": "tel",
+                    "alt": "Phone icon"
+                }
+            ]
+        }
+    }
+}

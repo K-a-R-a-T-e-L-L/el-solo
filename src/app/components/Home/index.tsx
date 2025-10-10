@@ -38,7 +38,7 @@ const Home = ({ t }: HomeProps) => {
     }, [widthWindow, widthsCards]);
 
     return (
-        <section className="h-[950px] w-full flex masked relative pt-20" id="home">
+        <section className="h-[950px] max-xl:h-[850px] max-lg:h-[800px] w-full flex masked relative pt-20" id="home">
             <Image src={'/images/night_city.png'} alt={t.home.alts[0]} fill style={{ objectFit: 'cover' }} className="-z-1" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />
             <article className="w-[50%] max-xl:w-[40%] max-lg:w-[50%] max-md:w-full h-full flex flex-col justify-start pt-[10%] pr-[3%] z-1">
                 <h1 className={`text-[42px] max-xl:text-[32px] max-lg:text-[28px] max-md:text-[26px] hidden_text_home`} style={{ fontFamily: 'RubikWetPaint', animationDelay: '2s' }} >

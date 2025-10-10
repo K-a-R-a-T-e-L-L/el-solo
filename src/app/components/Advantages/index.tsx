@@ -21,9 +21,9 @@ const Advantages = ({ t }: AdvantagesProps) => {
             <div className="h-full flex flex-col gap-y-5 justify-between max-md:row-start-2 max-md:w-[60%] max-sm:w-[80%] max-md:pt-[40px]">
                 {t.advantages.advantagesList.length > 0 ? t.advantages.advantagesList.map((el, i) => {
                     return (
-                        <div className={`w-full aspect-[6/3] rounded-2xl ${style.gradient_border}`} key={i} style={{ animationDelay: `${i * 0.5}s` }}>
+                        <div className={`w-full  rounded-2xl ${style.gradient_border}`} key={i} style={{ animationDelay: `${i * 0.5}s` }}>
                             <div className={`${style.bgCardAdvatage} w-full h-full bg-[#141414] rounded-[14px]`}>
-                                <h4 className="text-[20px] max-xl:text-[16px] inline-flex w-full items-center gap-x-4 p-5 text-[#00FF88] hidden_text_advantages" style={{ fontFamily: 'RubikWetPaint', animationDelay: `${2 + 0.5 * i}s` }}>
+                                <h4 className="text-[20px] max-xl:text-[16px] flex w-full items-center gap-x-4 p-5 text-[#00FF88] hidden_text_advantages" style={{ fontFamily: 'RubikWetPaint', animationDelay: `${2 + 0.5 * i}s` }}>
                                     <div className={`w-[30px] aspect-[1/1] relative`}>
                                         <Image src={'/images/arrow_red.png'} alt={t.advantages.alts[0]} fill style={{ animationDelay: `${i * 0.2}s` }} className={`object-contain ${style.shift}`} sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />
                                     </div>
@@ -37,7 +37,7 @@ const Advantages = ({ t }: AdvantagesProps) => {
                     )
                 }) : null}
             </div>
-            <div className="h-full grid grid-rows-2 place-items-center max-md:w-[100%]">
+            <div className="h-full max-sm:grid-rows-[400px_auto] grid grid-rows-2 place-items-center max-md:w-[100%]">
                 <div className="w-full grid place-items-center">
                     <h2 className={`text-[32px] max-xl:text-[22px] text-center ${style.glitch} hidden_title_advantages`} style={{ fontFamily: 'RubikWetPaint', animationDelay: '2s' }}>{t.advantages.title}</h2>
                     <h3 className="text-[22px] max-xl:text-[18px] mt-[30px] max-xl:mt-[15px] text-center hidden_title_advantages" style={{ fontFamily: 'RubikWetPaint', animationDelay: '2.5s' }}>
@@ -45,7 +45,7 @@ const Advantages = ({ t }: AdvantagesProps) => {
                         <br />
                         {t.advantages.titleSecond.last}
                     </h3>
-                    <div className="w-[80%] aspect-[576/336] relative">
+                    <div className="w-[80%] max-sm:w-[300px] aspect-[576/336] relative">
                         <Image src={'/images/handshake.png'} alt={t.advantages.alts[1]} className={`object-contain opacity-35 rounded-[100px] ${style.shaking}`} fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />
                     </div>
                 </div>

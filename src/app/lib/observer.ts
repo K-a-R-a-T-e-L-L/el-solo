@@ -8,7 +8,7 @@ export function animatedElements(trackedClass: string, animatedClasses: string) 
                 observer.unobserve(entry.target);
             };
         })
-    }, { threshold: 0.3 });
+    }, { threshold: 0.1 });
 
     const listAnimatedElements = document.querySelectorAll(trackedClass);
 

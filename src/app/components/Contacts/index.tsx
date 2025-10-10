@@ -19,7 +19,7 @@ const Contacts = ({ t }: ContactsProps) => {
     }, []);
 
     return (
-        <section className="w-full pt-[120px] pb-[100px] pl-10" id="contacts">
+        <section className="w-full pt-[100px] pb-[100px] pl-10" id="contacts">
             <article className="w-full h-full flex flex-col justify-center gap-y-20 max-xl:gap-y-10 perspective-[1000px]">
                 <h2 className={`text-[32px] max-xl:text-[22px] text-[#00FFD1] ${style.title_pulse} hidden_text_contacts`} style={{ fontFamily: 'RubikWetPaint', animationDelay: `2s` }}>{t.contacts.title}</h2>
                 <div className="grid grid-cols-2 max-md:grid-cols-1 gap-y-18 w-full h-full">

@@ -9,7 +9,7 @@ interface FooterProps {
 
 const Footer = ({ t }: FooterProps) => {
     return (
-        <footer className="w-full pb-[50px] mt-[100px] bg-gradient-to-t bg-no-repeat from-[#01030b] to-[#0a0a0a] grid grid-cols-3 max-sm:grid-cols-1 p-8 gap-y-15">
+        <footer className="w-full pb-[50px] mt-[100px] max-lg:mt-[50px] max-md:mt-[0] bg-gradient-to-t bg-no-repeat from-[#01030b] to-[#0a0a0a] grid grid-cols-3 max-sm:grid-cols-1 p-8 gap-y-15">
             <div className="border-0 flex flex-col items-center gap-y-5 max-sm:w-[250px] ml-[auto] mr-[auto]">
                 <div className="w-full flex gap-x-5 justify-center">
                     <div className="w-[30px] aspect-square relative">

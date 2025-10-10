@@ -18,7 +18,7 @@ const Portfolio = ({ t }: PortfolioProps) => {
     }, []);
 
     return (
-        <section className="w-full flex flex-col max-lg:pt-[150px] pt-[350px] gap-y-10 max-xl:gap-y-7 items-center justify-center" id='portfolio'>
+        <section className="w-full flex flex-col max-lg:pt-[100px] pt-[350px] gap-y-10 max-xl:gap-y-7 items-center justify-center" id='portfolio'>
             <h2 className={`text-[32px] max-xl:text-[22px] text-[#00FFD1] ${style.swaying_title} hidden_title_portfolio`} style={{ fontFamily: 'RubikWetPaint', animationDelay: `2s` }}>{t.portfolio.title}</h2>
             <div className="flex flex-col items-center w-full h-full gap-y-7">
                 {t.portfolio.projects.length > 0 ? t.portfolio.projects.map((el, i) => {

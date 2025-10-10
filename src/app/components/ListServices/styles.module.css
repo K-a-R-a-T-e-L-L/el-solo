@@ -47,6 +47,8 @@
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
+        transform-style: preserve-3d;
+        position: absolute;
         overflow: hidden;
 
         &::after {

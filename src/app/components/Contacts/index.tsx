@@ -61,23 +61,24 @@ const Contacts = ({ t }: ContactsProps) => {
                         {columnFirst.length > 0 && columnFirst.map((el, i) => {
                             return (
                                 <div className={`w-[100%] max-w-[100%] flex gap-x-5 relative hover:translate-x-1 transition-all duration-305 ease-in-out min-h-[140px]
-                                    bg-[rgba(0,255,255,0.01)] p-10 rounded-[20px] border-1 border-[rgba(0,255,255,0.1)]`}
+                                    bg-[rgba(0,255,255,0.01)] p-10 max-sm:p-5 rounded-[20px] border-1 border-[rgba(0,255,255,0.1)]`}
                                     key={i}>
-                                    <div className="relative w-[15%] max-w-[50px] min-w-[50px] aspect-[1/1]">
+                                    <div className="relative w-[15%] max-w-[50px] min-w-[50px] max-sm:min-w-[30px] aspect-[1/1]">
                                         <Image src={`/images/${el.src}_icon.png`} alt={el.alt} className="object-contain" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />
                                     </div>
                                     <div className="w-[82%] flex flex-col justify-evenly gap-y-2">
-                                        <h3 className="text-[22px] max-xl:text-[18px] text-cyan-500 hidden_text_contacts" style={{ fontFamily: 'RubikWetPaint', animationDelay: `${2.5 + 0.5 * i}s` }}>
+                                        <h3 className="text-[22px] max-xl:text-[18px] text-cyan-500 hidden_text_contacts inline-flex max-sm:flex-col" style={{ fontFamily: 'RubikWetPaint', animationDelay: `${2.5 + 0.5 * i}s` }}>
                                             {el.name}
-                                            <button className={`text-[12px] ml-[20px] inline-flex gap-2 items-center justify-center p-1 bg-black pl-2 pr-2 rounded-[5px] border-1 border-[rgba(0,255,255,0.1)]
-                                                hover:border-[#00BCD4] active:scale-[0.97] transition-all duration-200 ease-in-out`} onClick={() => { copyText(el.url, i) }}>
+                                            <button className={`text-[12px] w-[fit-content] max-sm:text-[11px] ml-[20px] max-sm:ml-[0px] inline-flex gap-2 items-center justify-center p-1 bg-black pl-2 pr-2 rounded-[5px] border-1 
+                                                border-[rgba(0,255,255,0.1)] max-sm:p-0.5 max-sm:pl-1 max-sm:pr-1 hover:border-[#00BCD4] active:scale-[0.97] transition-all duration-200 ease-in-out`}
+                                                onClick={() => { copyText(el.url, i) }}>
                                                 {buttonsTexts[i]}
-                                                <div className="w-[15px] aspect-square relative">
+                                                <div className="w-[15px] max-sm:w-[10px] aspect-square relative">
                                                     <Image src={`/images/icon_copy.png`} alt={"Icon copy"} className="object-contain" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />
                                                 </div>
                                             </button>
                                         </h3>
-                                        <Link className="text-cyan-600 text-nowrap hover:text-violet-700 hidden_text_contacts overflow-hidden" href={el.url} target="_blank" style={{ animationDelay: `${2.5 + 0.5 * i}s` }}>
+                                        <Link className="text-cyan-600 text-nowrap hover:text-violet-700 hidden_text_contacts overflow-hidden pr-5" href={el.url} target="_blank" style={{ animationDelay: `${2.5 + 0.5 * i}s` }}>
                                             {el.url}
                                         </Link>
                                     </div>
@@ -89,22 +90,23 @@ const Contacts = ({ t }: ContactsProps) => {
                         {columnSecond.length > 0 && columnSecond.map((el, i) => {
                             return (
                                 <div className={`w-[100%] max-w-[100%] flex gap-x-5 relative hover:translate-x-1 transition-all duration-305 ease-in-out min-h-[140px]
-                                    bg-[rgba(0,255,255,0.01)] p-10 rounded-[20px] border-1 border-[rgba(0,255,255,0.1)]`} key={i}>
-                                    <div className="relative w-[15%] max-w-[50px] min-w-[50px] aspect-[1/1]">
+                                    bg-[rgba(0,255,255,0.01)] p-10 max-sm:p-5 rounded-[20px] border-1 border-[rgba(0,255,255,0.1)]`} key={i}>
+                                    <div className="relative w-[15%] max-w-[50px] min-w-[50px] max-sm:min-w-[30px] aspect-[1/1]">
                                         <Image src={`/images/${el.src}_icon.png`} alt={el.alt} className="object-contain" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />
                                     </div>
                                     <div className="w-[82%] flex flex-col justify-evenly gap-y-2">
-                                        <h3 className="text-[22px] max-xl:text-[18px] text-cyan-500 hidden_text_contacts" style={{ fontFamily: 'RubikWetPaint', animationDelay: `${2.5 + 0.5 * i}s` }}>
+                                        <h3 className="text-[22px] max-xl:text-[18px] text-cyan-500 hidden_text_contacts inline-flex max-sm:flex-col" style={{ fontFamily: 'RubikWetPaint', animationDelay: `${2.5 + 0.5 * i}s` }}>
                                             {el.name}
-                                            <button className={`text-[12px] ml-[20px] inline-flex gap-2 items-center justify-center p-1 bg-black pl-2 pr-2 rounded-[5px] border-1 border-[rgba(0,255,255,0.1)]
-                                                hover:border-[#00BCD4] active:scale-[0.97] transition-all duration-200 ease-in-out`} onClick={() => { copyText(el.url, i === 0 ? 3 : i === 1 ? 4 : 5) }}>
+                                            <button className={`text-[12px] w-[fit-content] max-sm:text-[11px] ml-[20px] max-sm:ml-[0px] inline-flex gap-2 items-center justify-center p-1 bg-black pl-2 pr-2 rounded-[5px] border-1 
+                                                border-[rgba(0,255,255,0.1)] max-sm:p-0.5 max-sm:pl-1 max-sm:pr-1 hover:border-[#00BCD4] active:scale-[0.97] transition-all duration-200 ease-in-out`}
+                                                onClick={() => { copyText(el.url, i === 0 ? 3 : i === 1 ? 4 : 5) }}>
                                                 {i === 0 ? buttonsTexts[3] : i === 1 ? buttonsTexts[4] : buttonsTexts[5]}
-                                                <div className="w-[15px] aspect-square relative">
+                                                <div className="w-[15px] max-sm:w-[10px] aspect-square relative">
                                                     <Image src={`/images/icon_copy.png`} alt={"Icon copy"} className="object-contain" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />
                                                 </div>
                                             </button>
                                         </h3>
-                                        <Link className="text-cyan-600 text-nowrap hover:text-violet-700 hidden_text_contacts overflow-hidden" href={el.url} target="_blank" style={{ animationDelay: `${2.5 + 0.5 * i}s` }}>
+                                        <Link className="text-cyan-600 text-nowrap hover:text-violet-700 hidden_text_contacts overflow-hidden pr-5" href={el.url} target="_blank" style={{ animationDelay: `${2.5 + 0.5 * i}s` }}>
                                             {el.url}
                                         </Link>
                                     </div>

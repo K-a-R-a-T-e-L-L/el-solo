@@ -1,6 +1,7 @@
 import "../globals.scss";
 import LanguageSwitcher from "../components/LanguageSwitcher";
 import { siteMetadata } from "../lib/metadata";
+import YMetrika from "../components/YMetrica";
 
 export async function generateMetadata({ params }: Readonly<{ params: Promise<{ locale: string }> }>) {
   const locale: 'ru' | 'en' = (await params).locale as 'ru' | 'en';
@@ -85,9 +86,8 @@ export default async function RootLayout({ children, params }: Readonly<{ childr
           dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
         />
       </head>
-      <body
-        className={`antialiased`}
-      >
+      <body className={`antialiased`}>
+        <YMetrika/>
         <LanguageSwitcher currentLocale={locale} />
         {children}
       </body>

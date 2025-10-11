@@ -19,6 +19,7 @@ export function middleware(request: NextRequest) {
         pathname.startsWith('/yandex_89b9752c1dfcfb0f.html') ||
         pathname.startsWith('/sitemap') ||
         pathname.startsWith('/robots.txt') ||
+        pathname.startsWith('/google5fc679d63a4e21ac.html') ||
         pathname.startsWith('/apple-touch-icon.png')
     ) {
         return NextResponse.next();

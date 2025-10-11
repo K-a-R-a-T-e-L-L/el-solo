@@ -122,8 +122,8 @@ const ListServices = ({ t }: ListServicesProps) => {
                         <div className="relative w-[60%] aspect-[5/2] max-md:w-[80%] overflow-hidden rounded-xl max-xl:rounded-[8px]">
                             <Image src={'/images/puzzle.png'} alt={t.services.popUpWindow.alt} fill style={{ objectFit: 'cover' }} sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />
                         </div>
-                        <div className="w-[200px] aspect-square relative overflow-hidden rounded-[30px]">
-                            <Image src={'/images/qr.png'} alt={'QR code'} fill style={{ objectFit: 'contain' }} sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />
+                        <div className="w-[130px] aspect-square relative">
+                            <Image src={'/images/qr.png'} alt={'QR code tg'} fill style={{ objectFit: 'contain' }} sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />
                         </div>
                         <hr className="w-[80%] h-[2px] max-md:w-[90%]" />
                         <div className="h-[50px] max-xl:h-[40px] max-xl:gap-x-[12px] flex p-1 gap-[20px] flex-wrap justify-center items-center mt-[30px] max-xl:mt-[20px]">

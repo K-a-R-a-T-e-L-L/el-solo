@@ -1,6 +1,5 @@
 import Image from "next/image";
 import Link from "next/link";
-import style from './styles.module.css';
 import { ContactsI18nType } from "@/types/i18n";
 import { useEffect, useState } from "react";
 import { animatedElements } from "@/app/lib/observer";
@@ -31,18 +30,22 @@ const Contacts = ({ t }: ContactsProps) => {
         navigator.clipboard.writeText(copiedText)
             .then(() => {
                 setButtonsTexts((prevState) => {
-                    return [...prevState, prevState[index] = '✓ Copied!'];
+                    const newPrevState = [...prevState];
+                    newPrevState[index] = '✓ Copied!';
+                    return newPrevState;
                 });
-            });
 
-        const timeout = setTimeout(() => {
-            const defaultTextButton: string = index === 0 ? 'copy tg username' : index === 3 ? 'copy email' : index === 5 ? 'copy phone number' : 'copy link';
-            setButtonsTexts((prevState) => {
-                return [...prevState, prevState[index] = defaultTextButton];
-            });
-        }, 2000);
+                const timeout = setTimeout(() => {
+                    const defaultTextButton: string = index === 0 ? 'copy tg username' : index === 3 ? 'copy email' : index === 5 ? 'copy phone number' : 'copy link';
+                    setButtonsTexts((prevState) => {
+                        const newPrevState = [...prevState];
+                        newPrevState[index] = defaultTextButton;
+                        return newPrevState;
+                    });
+                }, 2000);
 
-        return () => clearTimeout(timeout);
+                return () => clearTimeout(timeout);
+            });
     };
 
     useEffect(() => {

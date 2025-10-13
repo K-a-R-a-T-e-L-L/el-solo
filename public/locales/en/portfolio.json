@@ -41,6 +41,27 @@
                     "url": "project_2",
                     "alt": "El Solo logo"
                 }
+            },
+            {
+                "title": "Historical Dates is a minimalistic educational web project",
+                "description": "A simple and concise website presenting the key scientific and technological events of 1980-2022. The project was created simply with the idea: «We need something beautiful and interactive in a hurry».",
+                "technologies": [
+                    "Next.js",
+                    "TypeScript",
+                    "GSAP",
+                    "SCSS",
+                    "Swiper",
+                    "CSS",
+                    "Vercel"
+                ],
+                "button": {
+                    "title": "View the project →",
+                    "url": "https://historical-dates-iota-inky.vercel.app/"
+                },
+                "icon": {
+                    "url": "project_3",
+                    "alt": "The logo of the Historical Dates website"
+                }
             }
         ]
     }

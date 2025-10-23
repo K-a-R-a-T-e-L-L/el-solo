@@ -78,7 +78,13 @@ const Contacts = ({ t }: ContactsProps) => {
                                                 </div>
                                             </button>
                                         </h3>
-                                        <Link className="text-cyan-600 text-nowrap hover:text-violet-700 hidden_text_contacts overflow-hidden pr-5" href={el.url} target="_blank" style={{ animationDelay: `${2.5 + 0.5 * i}s` }}>
+                                        <Link
+                                            className="text-cyan-600 text-nowrap hover:text-violet-700 hidden_text_contacts overflow-hidden pr-5"
+                                            href={el.url}
+                                            target="_blank"
+                                            style={{ animationDelay: `${2.5 + 0.5 * i}s` }}
+                                            rel="noopener noreferrer"
+                                        >
                                             {el.url}
                                         </Link>
                                     </div>

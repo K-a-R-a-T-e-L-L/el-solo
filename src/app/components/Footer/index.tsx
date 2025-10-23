@@ -37,7 +37,13 @@ const Footer = ({ t }: FooterProps) => {
                 <ul className="flex flex-col items-center text-[14px] max-xl:text-[12px] text-gray-400 gap-y-1">
                     {t.footer.thirdBox.listLinks.length > 0 && t.footer.thirdBox.listLinks.map((el, i) => {
                         return (
-                            <Link href={el[1]} className="hover:text-gray-200 cursor-pointer inline-flex items-center justify-center gap-x-2 overflow-hidden hover:scale-[1.05] transition-all ease-in-out duration-150" key={i} target="_blank">
+                            <Link
+                                href={el[1]}
+                                className="hover:text-gray-200 cursor-pointer inline-flex items-center justify-center gap-x-2 overflow-hidden hover:scale-[1.05] transition-all ease-in-out duration-150"
+                                key={i}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
                                 <div className="h-[60%] aspect-square relative">
                                     <Image src={`/images/${el[2]}_icon_aqua.png`} alt={el[3]} fill style={{ objectFit: 'contain' }} sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />
                                 </div>

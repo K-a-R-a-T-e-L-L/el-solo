@@ -129,7 +129,13 @@ const ListServices = ({ t }: ListServicesProps) => {
                         <div className="h-[50px] max-xl:h-[40px] max-xl:gap-x-[12px] flex p-1 gap-[20px] flex-wrap justify-center items-center mt-[30px] max-xl:mt-[20px]">
                             {t.services.popUpWindow.listSocialNetwork.length > 0 ? t.services.popUpWindow.listSocialNetwork.map((el, i) => {
                                 return (
-                                    <a className="h-full aspect-[1/1] rounded-[100%] relative shadow-[0_0_5px_black] cursor-pointer hover:opacity-70 active:scale-[0.97] transition-all duration-100" key={i} href={el.url} target="_blank">
+                                    <a
+                                        className="h-full aspect-[1/1] rounded-[100%] relative shadow-[0_0_5px_black] cursor-pointer hover:opacity-70 active:scale-[0.97] transition-all duration-100"
+                                        key={i}
+                                        href={el.url}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    >
                                         <Image src={`/images/${el.name}_icon.png`} alt={el.alt} fill style={{ objectFit: 'cover' }} sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />
                                     </a>
                                 )

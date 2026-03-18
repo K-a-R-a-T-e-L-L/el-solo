@@ -1,7 +1,7 @@
 import { MetadataRoute } from "next";
 
 const sitemap = (): MetadataRoute.Sitemap => {
-    const BASE_URL = "https://el-solo.space";
+    const BASE_URL = "https://el-solo.karatell.ru";
 
     return [
         {

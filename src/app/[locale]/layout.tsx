@@ -22,7 +22,7 @@ export async function generateMetadata({ params }: Readonly<{ params: Promise<{ 
     openGraph: {
       title: meta.openGraph.title,
       description: meta.openGraph.description,
-      url: `https://el-solo.space/${locale}`,
+      url: `https://el-solo.karatell.ru/${locale}`,
       siteName: "El Solo",
       locale: meta.openGraph.locale,
       type: "website",
@@ -36,9 +36,9 @@ export async function generateMetadata({ params }: Readonly<{ params: Promise<{ 
       ]
     },
     alternates: {
-      canonical: `https://el-solo.space/${locale}`
+      canonical: `https://el-solo.karatell.ru/${locale}`
     },
-    metadataBase: new URL("https://el-solo.space"),
+    metadataBase: new URL("https://el-solo.karatell.ru"),
     icons: {
       icon: [
         { url: '/favicon.ico', sizes: '16x16', type: 'image/vnd.microsoft.icon' },
@@ -61,7 +61,7 @@ export default async function RootLayout({ children, params }: Readonly<{ childr
     '@type': 'ProfessionalService',
     name: 'El Solo',
     image: '/images/preview.png',
-    url: `https://el-solo.space/${locale}`,
+    url: `https://el-solo.karatell.ru/${locale}`,
     telephone: '+79617160943',
     description: `${locale === 'ru' ? 'Полный цикл веб-разработки и digital-услуг.' : 'A full cycle of web development and digital services.'}`,
     sameAs: [
@@ -78,9 +78,9 @@ export default async function RootLayout({ children, params }: Readonly<{ childr
     <html lang={locale}>
       <head>
         <link rel="manifest" href={`/site_${locale}.webmanifest`} />
-        <link rel="alternate" hrefLang="ru" href="https://el-solo.space/ru" />
-        <link rel="alternate" hrefLang="en" href="https://el-solo.space/en" />
-        <link rel="alternate" hrefLang="x-default" href="https://el-solo.space/ru" />
+        <link rel="alternate" hrefLang="ru" href="https://el-solo.karatell.ru/ru" />
+        <link rel="alternate" hrefLang="en" href="https://el-solo.karatell.ru/en" />
+        <link rel="alternate" hrefLang="x-default" href="https://el-karatell.ru.space/ru" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
